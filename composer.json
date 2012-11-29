@@ -2,21 +2,24 @@
   "name": "axis/toolkit",
   "type": "library",
   "description": "Axis Toolkit Library",
-  "keywords": [],
-  "homepage": "http://vk.com/crazy_vano",
+  "keywords": ["axis", "toolkit", "library", "string utils", "array utils"],
+  "homepage": "https://github.com/e1himself/axis-toolkit/",
   "license": "MIT",
+  
   "authors": [
     {
       "name": "Ivan Voskoboynyk",
-      "email": "ioann.voskoboynyk@gmail.com"
+      "email": "ioann.voskoboynyk@gmail.com",
+      "homepage": "https://github.com/e1himself/"
     }
   ],
+  
   "require": {
     "php": ">=5.3.3"
   },
+  
+  "target-dir": "Axis/Toolkit",
   "autoload": {
     "psr-0": { "Axis\\Toolkit\\": "" }
-  },
-  "target-dir": "Axis/Toolkit",
-  "minimum-stability": "dev"
+  }
 }
