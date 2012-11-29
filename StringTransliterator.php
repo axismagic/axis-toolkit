@@ -1,6 +1,6 @@
 <?php
 /**
- * @author io
+ * @author Ivan Voskoboynyk
  */
 
 namespace Axis\Toolkit;
@@ -29,6 +29,12 @@ class StringTransliterator
       'ю' => 'yu', 'я' => 'ya',
   );
 
+  /**
+   * Replaces cyrillic letters by their ascii analogues
+   *
+   * @param string $text
+   * @return string
+   */
   static protected function transliterizeCyrillic($text)
   {
     $text = str_replace(
@@ -38,6 +44,12 @@ class StringTransliterator
     return $text;
   }
 
+  /**
+   * Replaces non-english letters by their ascii analogues
+   *
+   * @param string $text
+   * @return string
+   */
   static public function transliterize($text)
   {
     return strtr(self::transliterizeCyrillic($text), self::$translitMap);
